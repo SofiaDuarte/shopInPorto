@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+    <head>
+        <title>Shop in Porto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="./css/styles.css" />
+        <link  rel="stylesheet" href="./hv/css/styles.css" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+        <link type="text/css" rel="stylesheet" href="./hv/css/glider.min.css" />
+    </head>
+    <body>
+        <header class="bg-white">
+            <div class="gridrow">
+                <div class="gridrow col-12 align-items-center">
+                    <div class="col-1 marginleftnone paddingleftnone" id="logo">
+                        <a href="index.html" title="Ir para a página inicial">
+                            <img src="hv/imgs/logotipo.svg" alt="Shop In Porto Logo" />
+                        </a>
+                    </div>
+                    <div class="gridrow col-11">
+                        <nav class="gridrow">
+                            <ul id="mainmenu">
+                                <li><a href="#" title="Junte-se a nós">Junta-te a nós</a></li>
+                                <li><a href="./liststores.html?origin=estabelecimentos" title="Estabelecimentos">Estabelecimentos</a></li>
+                                <li><a href="./today.html" title="Hoje no Porto">Hoje no Porto</a></li>
+                                <li><a href="#" title="Promoções">Promoções</a></li>
+                                <li><a href="./roteiro_detalhe.html" title="Roteiros">Roteiros</a></li>
+                                <li><a href="#" title="Blog">Blog</a></li>
+                                <li class="search-icon"><a href="#" title="Search"><i class="material-icons-round">search</i></a></li>
+                                <li>
+                                    <a href="#" title="Language">
+                                        <i class="material-icons-round">language</i><i class="material-icons-round">arrow_drop_down</i>
+                                    </a>
+                                </li>
+                                <li class="submenu">
+                                    <div class="marginrightfourth username">Olá, Gonçalo!</div>
+                                    <div class="avatar">
+                                        <img class="imgfit" src="./hv/imgs/goncalo.png" alt="Imagem perfil Gonçalo" title="Imagem perfil Gonçalo" />
+                                    </div>
+                                    <ul>
+                                        <li class="userInfo">
+                                            <div class="user-img">
+                                                <img class="imgfit" src="./hv/imgs/goncalo.png" alt="Imagem perfil Gonçalo" title="Imagem perfil Gonçalo" />
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="name">Gonçalo Gomes</div>
+                                                <div class="email">goncalogo@gmail.com</div>
+        
+                                            </div>
+                                        </li>
+                                        <li class="hr">
+                                            <hr>
+                                        </li>
+                                        <li><a href="./roteiros.html">Os meus roteiros</a></li>
+                                        <li><a href="#">Favoritos</a></li>
+                                        <li><a href="#">Check-ins</a></li>
+                                        <li class="hr">
+                                            <hr>
+                                        </li>
+                                        <li><a href="#">Notificaçoes</a></li>
+                                        <li><a href="#">Histórico</a></li>
+                                        <li><a href="#">Definições</a></li>
+                                        <li><a href="#">Ajuda</a></li>
+                                        <li><a href="#">Sair</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- ----- -->
+            <!-- Intro -->
+            <!-- ----- -->
+            <section class="intro" style="background-image: url('imgs/fundo/background.png');">
+                <div class="gridrow intro">
+                    <h1 class="textleft col-12 col-t-12 col-d-7 intro-title">Porto de Partilha</h1>
+                    <div class="search-bar gridrowfull paddingverticaldouble">
+                        <form class="col-12 col-t-12 col-d-12">
+                            <button class="btn-zone col-2 col-t-1 col-d-1"><i class="material-icons-round">gps_fixed</i></button>
+                            <input class="zones col-10 col-t-3 col-d-3" list="zones" name="zones" type="text" placeholder="Em que zona te encontras?">
+                            <datalist id="zones"> 
+                            </datalist>
+                        
+                            <input class="search col-10 col-t-7 col-d-7" type="text" placeholder="Pesquisa por estabelecimentos, produtos, serviços, etc."/>
+                            <button class="btn-search col-2 col-t-1 col-d-1"><i class="material-icons-round">search</i></button>
+                        </form>
+                    </div>
+
+                    <!--DOWNLOAD-->
+                    <div class="gridrowfull download marginbottomfull">
+                        <p class="offset-1 col-12 offset-t-3 col-t-12 offset-d-1 col-d-4">Faz o download da nossa app e <br> Procura - Encontra - Partilha</p>
+                        <button class="btn-download-app col-4 col-t-3 col-d-2" type="button">
+                            <img class="bxl-play-store" src="imgs/icons/bxl-apple.svg">
+                            <p>Download na <br>
+                            <span style="font-size: 18px">App Store</span></p>
+                        </button>
+                        <button class="btn-download-app col-t-3 col-d-2" type="button">
+                            <img class="bxl-play-store" src="imgs/icons/bxl-play-store.svg">
+                            <p>Download na <br>
+                            <span style="font-size: 18px">Google Play</span></p>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- --------- -->
+            <!-- REGISTAR -->
+            <!-- --------- -->
+            <section id="register" class="paddingverticaldouble">
+                <h2 class="textcenter marginbottomfull">Regista-te, partilha e ganha descontos</h2>
+                <div class="gridrow">
+                    <div class="col-12 col-t-12 col-d-4 marginbottomfull">
+                        <div class="register-card">
+                            <i class="material-icons-round">login</i>
+                            <p>Regista-te</p>
+                            <p>Faz login, guarda os teus estabelecimentos favoritos e cria os teus roteiros.</p>                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-t-12 col-d-4 marginbottomfull">
+                        <div class="register-card">
+                            <i class="material-icons-round">share</i>
+                            <p>Partilha</p>
+                            <p>Partilha os teus roteiros e estabelecimentos favoritos com amigos e família.</p>                            
+                        </div>
+                    </div>
+                    <div class="col-12 col-t-12 col-d-4 marginbottomfull">
+                        <div class="register-card">
+                            <i class="material-icons-round">loyalty</i>
+                            <p>Ganha</p>
+                            <p>Se partilhares estabelecimentos aderentes à rede Porto de Partilha ganhas descontos exclusivos.</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="register-link gridrow">
+                    <a  class="offset-3 col-6 offset-t-4 col-t-4 offset-d-5 col-d-2" href="#" title="See the Journal">Saber mais</a>
+                </div>
+            </section>
+            
+            <!-- ------- -->
+            <!-- COUNTUP -->
+            <!-- ------- -->
+            <section id="count" class="paddingverticaldouble" style="background-image: url('imgs/fundo/c-rculos.png');">
+                <div class="gridrow paddingverticaldouble">
+                    <div class="count-title col-12 col-d-7">
+                        <h2 class="textleft">Já fazes parte da <br> comunidade Shop In Porto? </h1>
+                        <p class="textleft">Partilha com os teus amigos e cresce connosco!</p>
+                    </div>
+                    <div class="count-num col-12 col-d-5 textcenter">
+                        <div class="">1</div>
+                        <div class="">2</div>
+                        <div class="">1</div>
+                        <div class="">1</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- --------- -->
+            <!-- PROMOÇÕES -->
+            <!-- --------- -->
+            <section id="gallery">
+                <div class="gridrow paddingverticaldouble promo-title">
+                    <h2 class="textleft col-6">Promoções</h2>
+                    <a class="textright col-3">Ver mais</a>
+                </div>
+                <div class="gridrow">
+                    <div class="glider-contain">
+                        <div id="carousel-images" class="gridrow glider">
+                            <div class="col-6">
+                                <div class="imgfit">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <div class="promo">
+                                        <p>Desconto de até 50% em produtos selecionados</p>
+                                    </div>
+                                    <img class="slider-image" src="imgs/opticalia.jpg" title="" alt="" />
+                                </div>
+                                <div class="post-info">
+                                    <div class="detail">
+                                        <p>Opticália Marquês</p>
+                                        <p>Categoria: Saúde, bem-estar e cuidados pessoais <br>
+                                             Zona: Marquês</p>
+                                        <p>2 PROMOÇÕES A DECORRER</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>Até 30/09/20 às 18h<i class="material-icons-round">insert_invitation</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="imgfit ">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <div class="promo">
+                                        <p>Oferta de refill na compra de cocktail com copo colecionável</p>
+                                    </div>
+                                    <img class="slider-image" src="imgs/HardRock.jpg" title="" alt="" />
+                                </div>
+                                <div class="post-info">
+                                    <div class="detail">
+                                        <p>Hard Rock Café Porto</p>
+                                        <p>Categoria: Restauração e bebidas <br>
+                                            Zona: Baixa</p>
+                                        <p>4 PROMOÇÕES A DECORRER</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>Até 30/09/20 às 23h<i class="material-icons-round">insert_invitation</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="imgfit ">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <div class="promo">
+                                        <p>Desconto de até 50% em produtos selecionados</p>
+                                    </div>
+                                    <img class="slider-image" src="imgs/opticalia.jpg" title="" alt="" />
+                                </div>
+                                <div class="post-info">
+                                    <div class="detail">
+                                        <p>Opticália Marquês</p>
+                                        <p>Categoria: Saúde, bem-estar e cuidados pessoais <br>
+                                             Zona: Marquês</p>
+                                        <p>2 PROMOÇÕES A DECORRER</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>Até 30/09/20 às 18h<i class="material-icons-round">insert_invitation</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="imgfit ">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <div class="promo">
+                                        <p>Oferta de refill na compra de cocktail com copo colecionável</p>
+                                    </div>
+                                    <img class="slider-image" src="imgs/HardRock.jpg" title="" alt="" />
+                                </div>
+                                <div class="post-info">
+                                    <div class="detail">
+                                        <p>Hard Rock Café Porto</p>
+                                        <p>Categoria: Restauração e bebidas <br>
+                                            Zona: Baixa</p>
+                                        <p>4 PROMOÇÕES A DECORRER</p>
+                                    </div>
+                                    <div class="date">
+                                        <p>Até 30/09/20 às 23h<i class="material-icons-round">insert_invitation</i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="glider-prev home"><i class="material-icons-round">arrow_back_ios</i></button>
+                        <button class="glider-next home"><i class="material-icons-round">arrow_forward_ios</i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------- -->
+            <!-- ROTEIROS -->
+            <!-- -------- -->
+            <section id="gallery2" >
+                <div class="gridrow guide-title">
+                    <div class="col-6">
+                        <h2 class="textleft">Top Roteiros</h2>
+                    </div>
+                    <div class="textright col-6 align-self-center">
+                        <a class="">Ver mais</a>
+                    </div>
+                </div>
+                <div class="gridrow">
+                    <div class="glider-contain">
+                        <div id="carousel-images2" class="gridrow glider2">
+                            <div class="col-6">
+                                <div class="imgfit">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <img class="slider-image" src="imgs/roteiro1.jpg" title="" alt="" />
+                                </div>
+                                <div class="guide-post-info">
+                                    <div class="guide-post-detail">
+                                        <p>Rally das Tascas</p>
+                                        <p>7 estabelecimentos <br>
+                                            Criado por <spam style="font-family: RegularBold">Manuel Silva</spam></p>
+                                    </div>
+                                    <div class="guide-post-share offset-d-5 col-d-1">
+                                        <p>42</p>
+                                        <i class="material-icons-round">share</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="imgfit ">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <img class="slider-image" src="imgs/roteiro2.jpg" title="" alt="" />
+                                </div>
+                                <div class="guide-post-info">
+                                    <div class="guide-post-detail">
+                                        <p>Compras de Natal</p>
+                                        <p>6 estabelecimentos <br>
+                                            Criado por <spam style="font-family: RegularBold">Catarina Pereira</spam></p>
+                                    </div>
+                                    <div class="guide-post-share offset-d-5 col-d-1">
+                                        <p>27</p>
+                                        <i class="material-icons-round">share</i>
+                                    </div>
+                                </div>                                
+                            </div>
+                            <div class="col-6">
+                                <div class="imgfit ">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <img class="slider-image" src="imgs/roteiro1.jpg" title="" alt="" />
+                                </div>
+                                <div class="guide-post-info">
+                                    <div class="guide-post-detail">
+                                        <p>Rally das Tascas</p>
+                                        <p>7 estabelecimentos <br>
+                                            Criado por <spam style="font-family: RegularBold">Manuel Silva</spam></p>
+                                    </div>
+                                    <div class="guide-post-share offset-d-5 col-d-1">
+                                        <p>42</p>
+                                        <i class="material-icons-round">share</i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="imgfit ">
+                                    <div class="icon-heart">
+                                        <i class="material-icons-round">favorite_border</i>
+                                    </div>
+                                    <img class="slider-image" src="imgs/roteiro2.jpg" title="" alt="" />
+                                </div>
+                                <div class="guide-post-info">
+                                    <div class="guide-post-detail">
+                                        <p>Compras de Natal</p>
+                                        <p>6 estabelecimentos <br>
+                                            Criado por <spam style="font-family: RegularBold">Catarina Pereira</spam></p>
+                                    </div>
+                                    <div class="guide-post-share offset-d-5 col-d-1">
+                                        <p>27</p>
+                                        <i class="material-icons-round">share</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="glider-prev-resp"><i class="material-icons-round">arrow_back_ios</i></button>
+                        <button class="glider-next-resp"><i class="material-icons-round">arrow_forward_ios</i></button>
+                    </div>
+                </div>
+                <!--Carousel-->
+                <!-- <div class="post-slider">
+                    <i class="material-icons-round prev2">chevron_left</i>
+                    <i class="material-icons-round next2">chevron_right</i>
+                    <div class="post-wrapper2">
+                        <div class="post">
+                            <img src="imgs/roteiro1.jpg" alt="" class="slider-image">
+                            <div class="icon-heart">
+                                <i class="material-icons-round">favorite_border</i>
+                            </div>
+                            <div class="guide-post-info">
+                                <div class="guide-post-detail">
+                                    <p>Rally das Tascas</p>
+                                    <p>7 estabelecimentos <br>
+                                        Criado por <spam style="font-family: RegularBold">Manuel Silva</spam></p>
+                                </div>
+                                <div class="guide-post-share offset-d-5 col-d-1">
+                                    <p>42</p>
+                                    <i class="material-icons-round">share</i>
+                                </div>
+                            </div>
+                        </div>
+     
+                        <div class="post">
+                            <img src="imgs/roteiro2.jpg" alt="" class="slider-image">
+                            <div class="icon-heart">
+                                <i class="material-icons-round">favorite_border</i>
+                            </div>
+                            <div class="guide-post-info">
+                                <div class="guide-post-detail">
+                                    <p>Compras de Natal</p>
+                                    <p>6 estabelecimentos <br>
+                                        Criado por <spam style="font-family: RegularBold">Catarina Pereira</spam></p>
+                                </div>
+                                <div class="guide-post-share offset-d-5 col-d-1">
+                                    <p>27</p>
+                                    <i class="material-icons-round">share</i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <img src="imgs/roteiro1.jpg" alt="" class="slider-image">
+                            <div class="icon-heart">
+                                <i class="material-icons-round">favorite_border</i>
+                            </div>
+                            <div class="guide-post-info">
+                                <div class="guide-post-detail">
+                                    <p>Rally das Tascas</p>
+                                    <p>7 estabelecimentos <br>
+                                        Criado por <spam style="font-family: Regular-Bold">Manuel Silva</spam></p>
+                                </div>
+                                <div class="guide-post-share offset-d-5 col-d-1">
+                                    <p>42</p>
+                                    <i class="material-icons-round">share</i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <img src="imgs/roteiro2.jpg" alt="" class="slider-image">
+                            <div class="icon-heart">
+                                <i class="material-icons-round">favorite_border</i>
+                            </div>
+                            <div class="guide-post-info">
+                                <div class="guide-post-detail">
+                                    <p>Compras de Natal</p>
+                                    <p>7 estabelecimentos <br>
+                                        Criado por <spam style="font-family: Regular-Bold">Catarina Pereira</spam></p>
+                                </div>
+                                <div class="guide-post-share offset-d-5 col-d-1">
+                                    <p>27</p>
+                                    <i class="material-icons-round">share</i>
+                                </div>
+                            </div>
+                        </div>
+                             
+                    </div>
+                </div> -->
+                <!--Carousel-->
+            </section>
+
+            <!-- ---------- -->
+            <!-- NEWSLETTER -->
+            <!-- ---------- -->
+            <aside id="news" class="paddingverticaldouble">
+                
+                <div class="gridrow paddingverticaldouble">
+                    <div class="news col-12 col-t-12 col-d-5">
+                        <h2 class="marginbottomfull">Subscreve a nossa <br> Newsletter</h2>
+                        <p>Em primeira mão! <br>
+                           Subscreve a Newsletter Shop in Porto e recebe todas as novidades, promoções exclusivas e eventos do comércio local do Porto.</p>
+                    </div>
+
+                    <div class="col-12 col-t-12 col-d-6 offset-d-1 news">
+                        <form class="news-radio" action="#">
+                            <p>
+                              <input type="radio" id="test1" name="radio-group" checked>
+                              <label for="test1">Sou comerciante</label>
+                            </p>
+                            
+                            <p>
+                              <input type="radio" id="test2" name="radio-group">
+                              <label for="test2">Sou cliente</label>
+                            </p>
+                          </form>
+
+
+                        <form class="news-form">
+                            <div class="news-email">
+                                <label class="marginbottomfull" for="email">Coloca aqui o teu e-mail</label>
+                                <input class="marginbottomfull" type="text" id="email" name="email" placeholder="Ex. email@gmail.com">
+                                <input class="news-email-submit" type="submit" value="Subscrever">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="gridrow marginbottomoneandhalf">
+                <div class="col-12">
+                    <img src="hv/imgs/logotipo-branco.svg" alt="ShopInPorto Logo" />
+                </div>
+            </div>
+            <div class="gridrow">
+                <div class="col-12 col-t-4 col-d-2">
+                    <h6>A Minha Conta</h6>
+                    <ul>
+                        <li>
+                            <a href="#" title="Entrar">
+                                Entrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Registar">
+                                Registar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-2">
+                    <h6>Shop in Porto</h6>
+                    <ul>
+                        <li>
+                            <a href="#" title="Junta-te a nós">Junta-te a nós</a>
+                        </li>
+                        <li>
+                            <a href="/liststores.html?origin=estabelecimentos" title="Estabelecimentos">Estabelecimentos</a>
+                        </li>
+                        <li>
+                            <a href="today.html" title="Hoje no Porto">Hoje no Porto</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Promoções">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Roteiros">Roteiros</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-3 border-right">
+                    <h6>Informação e ajuda</h6>
+                    <ul>
+                        <li>
+                            <a href="#" title="">Avisos legais e privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#" title="">Termos e condições</a>
+                        </li>
+                        <li>
+                            <a href="#" title="">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-2">
+                    <h6>Segue-nos</h6>
+                    <ul class="social">
+                        <li>
+                            <a href="#" title="Facebook">
+                                <img src="hv/imgs/facebook-icon.svg" title="Facebook logo" alt="Facebook logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Instagram">
+                                <img src="hv/imgs/instagram-icon.svg" title="Instagram logo" alt="Instagram logo" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-3">
+                    <h6>Câmara Municipal do Porto</h6>
+                    <p>Telefone:<br>+351 222 097 140</p>
+                    <p>Email:<br>shopinporto@cm-porto.pt</p>
+                </div>
+            </div>
+            <div class="gridrowfull copyright">
+                <div class="col-12 gridrow justify-content-center">
+                    <div class="textcenter">
+                        <img src="hv/imgs/porto-ponto.png" alt="Porto. logotipo"/>
+                    </div>
+                    <div class="textcenter">
+                        <p>Copyright 2020: Câmara Municipal do Porto</p>
+                    </div>
+            
+                </div>
+            </div>            
+        </footer>
+        
+        <!--JQUERY-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--Slick Carousel-->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--Custome script-->
+        <script src="./js/main.js"></script>
+        <script src="./hv/js/glider.js"></script>        
+        <script src="js/homepage.js"></script>
+    </body>
+</html>

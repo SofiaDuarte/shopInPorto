@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit - Projeto 360 - Listagem roteiros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="hv/css/styles.css" />
+    </head>
+    <body class="preload">
+        <main class="light-background" id="roteiros">
+            <div class="gridrow">
+                <div class="breadcrumb-list col-12">Homepage | <span>Os meus roteiros</span></div>
+                <div class="name">
+                    <h1>Olá, Gonçalo!</h1>
+                </div>
+            </div>
+            <div class="gridrow blue-background">
+                <div class="main">
+                    <div class="avatar">
+                        <img class="imgfit" src="./hv/imgs/goncalo.png" alt="Imagem perfil Gonçalo" title="Imagem perfil Gonçalo" />
+                    </div>
+                    <div class="user-info marginleftfull">
+                        <div><h2>Goncalo Gomes</h2></div>
+                        <div class="user-nivel">
+                            <a href="javascript:void(0)" onclick="modalOpen('nivelModal')">Nível: O tímido</a>
+                        </div>
+                    </div>
+                    <div class="icon-edit">
+                        <i class="material-icons-round">edit</i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gridrow">
+                <div class="tabs-section col-12">
+                    <div class="tab">
+                        <ul class="gridrow">
+                            <li>
+                                <button class="tablinks active" onclick="openTab(event, 'roteirostab')">Os meus roteiros</button>
+                            </li>
+                            <li>
+                                <button class="tablinks" onclick="openTab(event, 'favoritos')">Favoritos</button>
+                            </li>
+                            <li>
+                                <button class="tablinks" onclick="openTab(event, 'notificacoes')">Notificações</button>
+                            </li>
+                            <li>
+                                <button class="tablinks" onclick="openTab(event, 'historico')">Histórico</button>
+                            </li>
+                        </ul>
+                    </div>                            
+                    
+                    <div id="roteirostab" class="tabcontent" style="display: block;">
+                        <div class="gridrow col-12 justify-content-around">
+                            <div class="content-background col-4">
+                                    <div class="margintoptwothirds">
+                                        <div class="icon-share">
+                                            <i class="material-icons-round">share</i>
+                                        </div>
+                                        <a href="roteiro_detalhe.html" title="Detalhe roteiro cerveja">
+                                            <img class="imgfit" src="./hv/imgs/roteiro-picaria.jpg" alt="Roteiro cerveja" />
+                                        </a>
+                                    </div>
+                                <a href="roteiro_detalhe.html" title="Detalhe roteiro cerveja">
+                                    <div class="content">
+                                        <h2>Cervejas no Porto</h2>
+                                        <div>
+                                            Estabelecimentos: 05<br>
+                                            Zonas: 01
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-4 content-background ">
+                                <div class="add-roteiro">
+                                    <i class="material-icons-round">add</i>
+                                </div>
+                                <div class="content add-roteiro">
+                                    Criar roteiro
+                                </div>
+                            </div>
+                            <div class="col-4 content-background add-roteiro">
+                                <div class="add-roteiro">
+                                    <i class="material-icons-round">add</i>
+                                </div>
+                                <div class="content add-roteiro">
+                                    Criar roteiro
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="favoritos" class="tabcontent">
+                        <div class="gridrow col-12 justify-content-around">
+                            <div class="content-background col-4">
+                                <div class="margintoptwothirds">
+                                    <div class="icon-share">
+                                        <i class="material-icons-round">share</i>
+                                    </div>
+                                    <img class="imgfit" src="./hv/imgs/roteiro-picaria.jpg" alt="Roteiro cerveja" />
+                                </div>
+                                <div class="content">
+                                    <h2>Cervejas no Porto</h2>
+                                    <div>
+                                        Estabelecimentos: 05<br>
+                                        Zonas: 01
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 content-background ">
+                                <div class="add-roteiro">
+                                    <i class="material-icons-round">add</i>
+                                </div>
+                                <div class="content add-roteiro">
+                                    Adicionar favorito
+                                </div>
+                            </div>
+                            <div class="col-4 content-background add-roteiro">
+                                <div class="add-roteiro">
+                                    <i class="material-icons-round">add</i>
+                                </div>
+                                <div class="content add-roteiro">
+                                    Adicionar favorito
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="notificacoes" class="tabcontent">
+                        <div class="gridrow col-12 justify-content-around">
+                            <div class="content-background col-4">
+                                <div class="margintoptwothirds">
+                                    <img class="imgfit" src="./hv/imgs/roteiro-picaria.jpg" alt="Roteiro cerveja" />
+                                </div>
+                                <div class="content">
+                                    <h2>Cervejas no Porto</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-4 content-background ">
+                                <div class="add-roteiro">
+                                    <i class="material-icons-round">add</i>
+                                </div>
+                                <div class="content add-roteiro">
+                                    Adicionar notificação
+                                </div>
+                            </div>
+                            <div class="col-4 content-background add-roteiro">
+                                <div class="add-roteiro">
+                                    <i class="material-icons-round">add</i>
+                                </div>
+                                <div class="content add-roteiro">
+                                    Adicionar notificação
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="historico" class="tabcontent">
+                        <div class="gridrow col-12 justify-content-around">
+                            <div class="content-background col-4">
+                                <div class="margintoptwothirds">
+                                    <img class="imgfit" src="./hv/imgs/roteiro-picaria.jpg" alt="Roteiro cerveja" />
+                                </div>
+                                <div class="content">
+                                    <h2>Cervejas no Porto</h2>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-4 content-background ">
+                                
+                            </div>
+                            <div class="col-4 content-background add-roteiro">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="nivelModal" class="modal">
+                <div class="modal-content">
+                    <div class="textright close-x">
+                        <a href="javascript:void(0)" class="close" onclick="modalClose('nivelModal')"><i class="material-icons-round">close</i></a>
+                    </div>
+                    <div class="modalTitle">Fica a saber quantos níveis podes <br>explorar na Shop In Porto!</div>
+                    <div class="nivel">
+                        <div class="first-info">O teu nível atual:</div>
+                        <div class="second-info">O tímido</div>
+                        <div>
+                            <input class="nivel-slider" disabled type="range" min="1" max="100" value="10">
+                        </div>
+                    </div>
+                    <div class="all-levels">
+                        <div class="first-levels">
+                            <div class="level-item">
+                                <div class="level-card">
+                                    <div class="number">01</div>
+                                    <div class="stars">
+                                        <i class="material-icons-round">star</i>
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="level-desc">O tímido</div>
+                            </div>
+                            <div class="level-item">
+                                <div class="level-card blocked">
+                                    <div class="number">02</div>
+                                    <div class="stars">
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="level-desc blocked">O turista</div>
+                            </div>
+                            <div class="level-item">
+                                <div class="level-card blocked">
+                                    <div class="number">03</div>
+                                    <div class="stars">
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="level-desc blocked">O explorador</div>
+                            </div>
+                            <div class="level-item">
+                                <div class="level-card blocked">
+                                    <div class="number">04</div>
+                                    <div class="stars">
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="level-desc blocked">O peregrino</div>
+                            </div>
+                        </div>
+                            
+                        <div class="second-levels">
+                            
+                            <div class="level-item">
+                                <div class="level-card blocked">
+                                    <div class="number">05</div>
+                                    <div class="stars">
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="level-desc blocked">O perito</div>
+                            </div>
+                            <div class="level-item">
+                                <div class="level-card blocked">
+                                    <div class="number">06</div>
+                                    <div class="stars">
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="level-desc blocked">O portuense</div>
+                            </div>
+                            <div class="level-item">
+                                <div class="level-card blocked">
+                                    <div class="number">07</div>
+                                    <div class="stars">
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                        <i class="material-icons-round">star_border</i>
+                                    </div>
+                                </div>
+                                <div class="level-desc blocked">O tripeiro</div>
+                            </div>
+                            <div class="level-item">
+                                <div class="level-card blocked icon">
+                                    <i class="material-icons-round">loyalty</i>
+                                </div>
+                                <div class="level-desc blocked">Desconto especial</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-buttons-roteiros">
+                        <button class="share-button">Saber mais</button>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+        </footer>
+        <script src="./hv/js/main.js"></script>
+    </body>
+</html>

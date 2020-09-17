@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit - Projeto 360 - Listagem estabelecimentos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="hv/css/styles.css" />
+        <link type="text/css" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    </head>
+    <body class="preload">
+        <header class="bg-white">
+            <div class="gridrow">
+                <div class="gridrow col-12 align-items-center">
+                    <div class="col-1 marginleftnone paddingleftnone" id="logo">
+                        <a href="index.html" title="Ir para a página inicial">
+                            <img src="hv/imgs/logotipo.svg" alt="Shop In Porto Logo" />
+                        </a>
+                    </div>
+                    <div class="gridrow col-11">
+                        <nav class="gridrow">
+                            <ul id="mainmenu">
+                                <li><a href="#" title="Junte-se a nós">Junta-te a nós</a></li>
+                                <li><a href="./liststores.html?origin=estabelecimentos" title="Estabelecimentos">Estabelecimentos</a></li>
+                                <li><a href="./today.html" title="Hoje no Porto">Hoje no Porto</a></li>
+                                <li><a href="#" title="Promoções">Promoções</a></li>
+                                <li><a href="./roteiro_detalhe.html" title="Roteiros">Roteiros</a></li>
+                                <li><a href="#" title="Blog">Blog</a></li>
+                                <li class="search-icon"><a href="#" title="Search"><i class="material-icons-round">search</i></a></li>
+                                <li>
+                                    <a href="#" title="Language">
+                                        <i class="material-icons-round">language</i><i class="material-icons-round">arrow_drop_down</i>
+                                    </a>
+                                </li>
+                                <li class="submenu">
+                                    <div class="marginrightfourth username">Olá, Gonçalo!</div>
+                                    <div class="avatar">
+                                        <img class="imgfit" src="./hv/imgs/goncalo.png" alt="Imagem perfil Gonçalo" title="Imagem perfil Gonçalo" />
+                                    </div>
+                                    <ul>
+                                        <li class="userInfo">
+                                            <div class="user-img">
+                                                <img class="imgfit" src="./hv/imgs/goncalo.png" alt="Imagem perfil Gonçalo" title="Imagem perfil Gonçalo" />
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="name">Gonçalo Gomes</div>
+                                                <div class="email">goncalogo@gmail.com</div>
+        
+                                            </div>
+                                        </li>
+                                        <li class="hr">
+                                            <hr>
+                                        </li>
+                                        <li><a href="./roteiros.html">Os meus roteiros</a></li>
+                                        <li><a href="#">Favoritos</a></li>
+                                        <li><a href="#">Check-ins</a></li>
+                                        <li class="hr">
+                                            <hr>
+                                        </li>
+                                        <li><a href="#">Notificaçoes</a></li>
+                                        <li><a href="#">Histórico</a></li>
+                                        <li><a href="#">Definições</a></li>
+                                        <li><a href="#">Ajuda</a></li>
+                                        <li><a href="#">Sair</a></li>
+                                    </ul>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main class="light-background">
+            <section id="top">
+                <div class="gridrowfull">
+                    <div class="gridrow col-12">
+                        <div class="gridrow title">
+                            <h1></h1>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="gridrow quick-filters justify-content-between">
+                        <button>Mais perto</button>
+                        <button>Porto de Tradição</button>
+                        <button>Top 20</button>
+                        <button>Favoritos</button>
+                        <button>Ver no mapa</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="gridrow">
+                    <div class="breadcrumb-list col-12">Homepage | <span></span></div>
+                </div>
+            </section>
+            <section id="list">
+                <div class="gridrow">
+                    <div class="col-3">
+                        <div class="filter-start">
+                            <p>Filtros</p>
+                            <div class="filter-element">Destaques
+                                <ul>
+                                    <li>
+                                        <div class="filter-item">
+                                            <label for="promo" class="container">
+                                                Promoções
+                                                <input type="checkbox" id="promo" class="" />
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter-result-count">12</div>
+                                    </li>
+                                    <li>
+                                        <div class="filter-item">
+                                            <label for="roteiro" class="container">
+                                                Roteiros
+                                                <input type="checkbox" id="roteiro" class="" />
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter-result-count">37</div>
+                                    </li>
+                                    <li>
+                                        <div class="filter-item">
+                                            <label for="eventos" class="container">
+                                                Eventos
+                                                <input type="checkbox" id="eventos" class="" />
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="filter-result-count">03</div>
+                                    </li>
+                                </ul>
+                            </div>
+                                
+                            <div class="filter-element">Categorias
+                                <input type="checkbox" class="see-more-state" id="seeMoreCats" />
+                                <ul id="category-filter" class="see-more-wrap">
+                                </ul>
+                                <label for="seeMoreCats" class="see-more-trigger"></label>
+                                <hr/>
+                            </div>
+                            <div class="filter-element">Zonas
+                                <input type="checkbox" class="see-more-state-zones" id="seeMoreZones" />
+                                <ul id="zones-filter" class="see-more-wrap-zones">
+                                </ul>
+                                <label for="seeMoreZones" class="see-more-trigger-zones"></label>
+                                <hr/>
+                            </div>
+                            <div class="filter-element">Avaliações
+                                <ul id="rate-filter">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 offset-1">
+                        <div id="store-list" class="gridrow col-12 paddingleftnone paddingrightnone"></div>
+                        <div class="gridrow col-12 pagination">
+                            <div id="pagination" class="gridrow col-9 justify-content-center">
+
+                            </div>
+                            <div id="results" class="col-3 textright paddingrightone">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <div class="gridrow marginbottomoneandhalf">
+                <div class="col-12">
+                    <img src="hv/imgs/logotipo-branco.svg" alt="ShopInPorto Logo" />
+                </div>
+            </div>
+            <div class="gridrow">
+                <div class="col-12 col-t-4 col-d-2">
+                    <h6>A Minha Conta</h6>
+                    <ul>
+                        <li>
+                            <a href="#" title="Entrar">
+                                Entrar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Registar">
+                                Registar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-2">
+                    <h6>Shop in Porto</h6>
+                    <ul>
+                        <li>
+                            <a href="#" title="Junta-te a nós">Junta-te a nós</a>
+                        </li>
+                        <li>
+                            <a href="/liststores.html?origin=estabelecimentos" title="Estabelecimentos">Estabelecimentos</a>
+                        </li>
+                        <li>
+                            <a href="today.html" title="Hoje no Porto">Hoje no Porto</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Promoções">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Roteiros">Roteiros</a>
+                        </li>
+                        <li>
+                            <a href="#" title="Blog">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-3 border-right">
+                    <h6>Informação e ajuda</h6>
+                    <ul>
+                        <li>
+                            <a href="#" title="">Avisos legais e privacidade</a>
+                        </li>
+                        <li>
+                            <a href="#" title="">Termos e condições</a>
+                        </li>
+                        <li>
+                            <a href="#" title="">FAQ's</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-2">
+                    <h6>Segue-nos</h6>
+                    <ul class="social">
+                        <li>
+                            <a href="#" title="Facebook">
+                                <img src="hv/imgs/facebook-icon.svg" title="Facebook logo" alt="Facebook logo" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Instagram">
+                                <img src="hv/imgs/instagram-icon.svg" title="Instagram logo" alt="Instagram logo" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-t-4 col-d-3">
+                    <h6>Câmara Municipal do Porto</h6>
+                    <p>Telefone:<br>+351 222 097 140</p>
+                    <p>Email:<br>shopinporto@cm-porto.pt</p>
+                </div>
+            </div>
+            <div class="gridrowfull copyright">
+                <div class="col-12 gridrow justify-content-center">
+                    <div class="textcenter">
+                        <img src="hv/imgs/porto-ponto.png" alt="Porto. logotipo"/>
+                    </div>
+                    <div class="textcenter">
+                        <p>Copyright 2020: Câmara Municipal do Porto</p>
+                    </div>
+            
+                </div>
+            </div>        
+        </footer>
+<!--         <script src="./hv/js/main.js"></script>
+ -->        <script src="./hv/js/storelist.js"></script>
+    </body>
+</html>

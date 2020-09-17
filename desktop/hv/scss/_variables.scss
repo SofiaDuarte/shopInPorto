@@ -1,0 +1,52 @@
+$titlesfont: "RegularBold";
+$titlesfontweights: "400;600";
+$bodyfont: "Regular";
+$bodyfontweights: "400";
+
+// $primary: #126ed4;
+$primary: #0f314d;
+
+$secondary: #629bff;
+$denin: #33587C;
+$tealish: #1EA0C8;
+
+// $graydark: #333;
+$gray: #616161; //brownishgray
+$graylight: #9e9e9e; //browngrey
+$white: #FFF;
+$black: #222222;
+$darkishBlue: #0043A2;
+$seafoamBlue: #6FDCDF;
+$lightCyan: #A4FFFF;
+$greenyBlue: #35A9AD;
+$highemphasis: #000000;
+
+$animationtime: 0.4s;
+
+$tablet: 750px;
+$desktop: 1180px;
+
+$gridcolumns: 12;
+$gridgutter: 24px;
+
+$gridwidth: 100%;
+$gridwidtht: 90%;
+$gridwidthd: $desktop - $gridgutter;
+
+$icomoon-font-family: "editstore" !default;
+$icomoon-font-path: "../fonts" !default; 
+
+$icn-star: "\f005";
+$icn-facebook: "\e900";
+$icn-pinterest: "\e901";
+$icn-twitter: "\e902";
+$icn-chevron-down: "\e903";
+$icn-chevron-left: "\e904";
+$icn-chevron-right: "\e905";
+$icn-chevron-up: "\e906";
+$icn-heart: "\e907";
+$icn-minus: "\e908";
+$icn-plus: "\e909";
+$icn-reload: "\e90a";
+$icn-search: "\e90b";
+$icn-shopping-cart: "\e90c";
